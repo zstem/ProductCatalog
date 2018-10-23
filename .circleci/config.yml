@@ -4,11 +4,11 @@
 
 general:
     artifacts:
-        - /home/Windows/ProductCatalog/app/build/outputs/apk/
+        - /home/ubuntu/ProductCatalog/app/build/outputs/apk/
 
 machine:
     environment:
-        ANDROID_HOME: /usr/AppData/Local/Android/Sdk
+        ANDROID_HOME: /usr/local/android-sdk-linux
 
 dependencies:
     override:
