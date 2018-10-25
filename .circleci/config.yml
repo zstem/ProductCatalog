@@ -22,9 +22,10 @@ jobs:
           key: jars-{{ checksum "build.gradle" }}-{{ checksum  "app/build.gradle" }}
       - run:
           name: Run UnitTest
-         command: ./gradlew ProductTest 
+         command: ./gradlew :ProductTest:test
       - store_artifacts:
           path: app/build/outputs/apk/debug/app-debug.apk
           destination: apks/
       - store_test_results:
         path: app/build/test-results
+ 
